@@ -9,6 +9,7 @@
 #end
 
 def reverse_each_word(words)
-  words.collect{|word| word.reverse}
-  return words.join(" ")
+  word_array = words.split(/ /)
+  word_array.collect{|word| word.reverse}
+  return word_array.join(" ")
 end
